@@ -1,0 +1,24 @@
+{
+  "name": "pi_github",
+  "version": "1.0.0",
+  "description": "Proyecto Intermodular 1º DAM ONLINE",
+  "main": "ProyectoNode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirmonx/PI_Github.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mirmonx/PI_Github/issues"
+  },
+  "homepage": "https://github.com/mirmonx/PI_Github#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.11"
+  }
+}

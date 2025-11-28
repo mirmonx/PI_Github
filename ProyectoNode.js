@@ -1,1 +1,1 @@
-console.log("Hola Mundo, modificado por Cris");
+console.log("Hola Mundo, editado por Cris");

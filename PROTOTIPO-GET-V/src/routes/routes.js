@@ -27,4 +27,58 @@ console.log("Alguien accedio a alimentacion get");
 res.send("esta es la informacion de alimentacion");
 });
 
+router.post("/holaPOST", (req, res)=> {
+    req.body = 
+        "En el request body guardaremos los datos de los formularios para enviarlos a la base de datos";
+    console.log("Enviada una peticion post.");
+    console.log(req.body);
+    // res.json({
+    //     Title: "Probando cosas con un Post."
+    // })
+    res.send("hola soy la 1ª ruta POST.");
+});
+
+router.post("/postPerfil", (req, res) => {
+  req.body = "Perfil guardado";
+
+  console.log("Enviada una peticion post");
+  console.log(req.body);
+  res.send(req.body + " y ha sido añadido a la base de datos");
+});
+
+router.post("/postCita", (req, res) => {
+  req.body = "Cita agendada.";
+
+  console.log("Enviada una peticion post");
+  console.log(req.body);
+  res.send(req.body + " y ha sido añadida a la base de datos");
+});
+
+router.post("/postVacuna", (req, res) => {
+  req.body = "Vacuna aplicada.";
+
+  console.log("Enviada una peticion post");
+  console.log(req.body);
+  res.send(req.body + " y los quiere añadir a la base de datos");
+});
+
+router.post("/postAlimentacion", (req, res) => {
+  req.body = "Alimentacion suministrada.";
+
+  console.log("Enviada una peticion post");
+  console.log(req.body);
+  res.send(req.body + " y lo quiere añadir a la base de datos");
+});
+
+router.post("/postCerrarSesion", (req, res) => {
+  req.body = "La sesion ha sido cerrada.";
+
+  console.log("Enviada una peticion post");
+  console.log(req.body);
+  res.send(req.body + " y los quiere añadir a la base de datos");
+});
+
+
+
+
 module.exports = router;
